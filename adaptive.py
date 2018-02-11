@@ -1,5 +1,5 @@
 # from skimage import filter
-from skimage import filters
+from skimage import filter
 import scipy.misc
 import Image, numpy
 
@@ -37,7 +37,7 @@ for i in fin.keys():
               # a is converted to an ndarray
               a = scipy.misc.fromimage(a)
               # performing adaptive thresholding
-              b = filters.threshold_adaptive(a,51,offset = 10)##yahan par second argument odd hona chahiye even nahi
+              b = filter.threshold_adaptive(a,51,offset = 10)##yahan par second argument odd hona chahiye even nahi
 
 
               # b is converted from an ndarray to an image
